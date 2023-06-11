@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	
+	
+
+	<bean class="com.springcore.auto.wire.Address"  name="address">
+		<property name="city" value ="indore"/>
+		<property name="state" value ="madhyapradesh" />
+		
+	</bean>
+	
+	
+	
+	<bean class="com.springcore.auto.wire.Employee" name="employee1" autowire="byType">
+		<property name="name" value="satyam" />
+		<property name="contact" value="7722818351"/>
+	</bean>
+	
+</beans>
